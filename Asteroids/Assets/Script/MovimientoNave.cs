@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-using WiimoteApi;
+//using WiimoteApi;
 
 public class MovimientoNave : MonoBehaviour {
 
-	private Wiimote wiimote;
+	//private Wiimote wiimote;
 
 	public float speed;
 	private Rigidbody rb;
@@ -22,17 +22,17 @@ public class MovimientoNave : MonoBehaviour {
 		//humo = GetComponent<ParticleSystem>();
 		rb = GetComponent<Rigidbody> ();
 
-		WiimoteManager.FindWiimotes();
-		WiimoteManager.HasWiimote ();
+		//WiimoteManager.FindWiimotes();
+		//WiimoteManager.HasWiimote ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (!WiimoteManager.HasWiimote()) { return; }
-		wiimote = WiimoteManager.Wiimotes[0];
+		//if (!WiimoteManager.HasWiimote()) { return; }
+		//wiimote = WiimoteManager.Wiimotes[0];
 		
-		int ret;
+		/*int ret;
 		do
 		{
 			ret = wiimote.ReadWiimoteData();
@@ -43,18 +43,21 @@ public class MovimientoNave : MonoBehaviour {
 				                             wiimote.MotionPlus.RollSpeed) / 95f; // Divide by 95Hz (average updates per second from wiimote)
 				
 			}
-		} while (ret > 0);
+		} while (ret > 0);*/
 
 
-		if (wiimote.Button.d_up) {
-			transform.Rotate(new Vector3 (0,0,3));
+		if (Input.GetKey(KeyCode.LeftArrow))
+        {//wiimote.Button.d_up
+            transform.Rotate(new Vector3 (0,0,3));
 		}
-		else if (wiimote.Button.d_down) {
-			transform.Rotate(new Vector3 (0,0,-3));
+		else if (Input.GetKey(KeyCode.RightArrow))
+        {//wiimote.Button.d_down
+            transform.Rotate(new Vector3 (0,0,-3));
 		}
 
-		if (wiimote.Button.d_right) {
-			rb.AddForce (transform.up * speed);
+		if (Input.GetKey(KeyCode.UpArrow))
+        {//wiimote.Button.d_right
+            rb.AddForce (transform.up * speed);
 
 			EfectodeParticulas.Emit(5);
 
@@ -70,11 +73,11 @@ public class MovimientoNave : MonoBehaviour {
 			AudioNaveAvanza.Stop();
 		}
 
-        bool retardador = true;
+        //bool retardador = true;
 
-		if (wiimote.Button.two && retardador == true) 
-		{
-            retardador = false;
+		if (Input.GetKeyDown(KeyCode.Space) /*&& retardador == true*/) //wiimote.Button.two
+        {
+            //retardador = false;
 			Instantiate (bala, transform.position,transform.rotation);
             StartCoroutine(elRetraso());
 		}
@@ -89,12 +92,12 @@ public class MovimientoNave : MonoBehaviour {
         yield return new WaitForSeconds(0.1f);
     }
 
-	void OnApplicationQuit() {
+	/*void OnApplicationQuit() {
 		if (wiimote != null) {
 			WiimoteManager.Cleanup(wiimote);
 			wiimote = null;
 		}
-	}
+	}*/
 
 
 }
