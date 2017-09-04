@@ -1,0 +1,52 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c60)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8541
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.022 seconds
+Platform assembly: C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Tobi_\Documents\GitHub\Clon-de-asteroids\Ejecutable\Asteroids Game_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.035532 ms
+Pausa
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Quitar pausa
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Pausa
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Quitar pausa
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.776614 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 529.
+Total: 0.421196 ms (FindLiveObjects: 0.041207 ms CreateObjectMapping: 0.024068 ms MarkObjects: 0.349356 ms  DeleteObjects: 0.006199 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 5898 -> priority: 1 
+  Thread -> id: 5820 -> priority: 1 
+  Thread -> id: 4e7c -> priority: 1 
+  Thread -> id: 5a1c -> priority: 1 

@@ -50,10 +50,16 @@ public class AsteroiddeScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
+	void Update ()
+    {
+        if(Vidas.pausa == false)
 		transform.position = new Vector3(transform.position.x + speedX, transform.position.y + speedY);
-	
+
+        if (Vidas.pausa == true && GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Pause();
+        else if(Vidas.pausa && GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().UnPause();
+
 	}
 
 	void OnTriggerEnter(Collider col)

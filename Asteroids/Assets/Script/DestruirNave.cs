@@ -3,12 +3,13 @@ using System.Collections;
 
 public class DestruirNave : MonoBehaviour {
 
-//	public int numVidas = 3;
+	public static bool toyVivo;
 //	public GameObject ImagenVida1, ImagenVida2, ImagenVida3;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+    {
+        toyVivo = true;
 	}
 	
 	// Update is called once per frame
@@ -19,25 +20,8 @@ public class DestruirNave : MonoBehaviour {
 	void OnTriggerEnter(Collider col)
 	{
 		if (col.gameObject.tag == "Asteroids") {
+            toyVivo = false;
 			Destroy(this.gameObject);
-//			QuitarVidas();
 		}
 	}
-
-//	void QuitarVidas()
-//	{
-//		if(gameObject == ImagenVida1 || gameObject == ImagenVida2 || gameObject == ImagenVida3)
-//		{
-//			Destroy(ImagenVida3);
-//
-//			if(gameObject != ImagenVida3)
-//			{
-//				Destroy(ImagenVida2);
-//				if(gameObject != ImagenVida2)
-//				{
-//					Destroy(ImagenVida1);
-//				}
-//			}
-//		}
-//	}
 }

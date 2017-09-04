@@ -23,12 +23,15 @@ public class AccionBala : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        if (Vidas.pausa == false)
+        {
+            part.Emit(5);
 
-		part.Emit(5);
-
-		life -= Time.deltaTime;
-		if(life < 0) Destroy(gameObject);
+            life -= Time.deltaTime;
+            if (life < 0) Destroy(gameObject);
+        }
 	
 	}
 
