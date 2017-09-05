@@ -8,6 +8,7 @@ public class Vidas : MonoBehaviour {
 	public GameObject[] imagenVida;
     public GameObject[] asteroides;
     public GameObject instrucciones;
+    public GameObject txtVictoria;
     public GameObject btnSalir, btnReniciar, textPausa;
     public static bool pausa;
     public int vidas;
@@ -34,6 +35,7 @@ public class Vidas : MonoBehaviour {
         {
             victoria = true;
             Debug.Log("YA GANASTE");
+            txtVictoria.SetActive(true);
             btnSalir.SetActive(true);
             btnReniciar.SetActive(true);
         }
