@@ -57,7 +57,7 @@ public class AsteroiddeScript : MonoBehaviour {
 
         if (Vidas.pausa == true && GetComponent<AudioSource>() != null)
             GetComponent<AudioSource>().Pause();
-        else if(Vidas.pausa && GetComponent<AudioSource>() != null)
+        else if(Vidas.pausa == false && GetComponent<AudioSource>() != null)
             GetComponent<AudioSource>().UnPause();
 
 	}
